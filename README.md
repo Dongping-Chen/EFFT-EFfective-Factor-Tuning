@@ -3,7 +3,6 @@
 
 <div>
     <a href='https://dongping-chen.github.io/' target='_blank'>Dongping Chen</a>&emsp;
-    <a href='http://wanyao.me/' target='_blank'>Yao Wan</a>&emsp;
 </div>
 <div>
     Huazhong University of Science and Technology
