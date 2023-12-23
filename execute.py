@@ -15,9 +15,9 @@ from vtab import *
 from Imagenet_loader import *
 from methods.Set_SSF import *
 from methods.Set_LoRA import *
-from methods.Set_PoFT import *
+from Set_PoFT import *
 from methods.Set_SSF_LoRA import *
-from methods.Set_PoFT_SSF import *
+from methods.Set_EFFT_SSF import *
 from methods.Set_EFFT import *
 from torch.cuda.amp import autocast, GradScaler
 import json

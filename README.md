@@ -8,7 +8,9 @@ Recent advancements have illuminated theefficacy of some tensorization-decomposi
 
 ## Prerequisites
 
-- Python 3.9
+- Python = 3.9
+- timm = 0.5.4
+- avalanche-lib = 0.4.0
 - Other dependencies specified in `requirements.txt`
 
 ## Installation
@@ -16,31 +18,32 @@ Recent advancements have illuminated theefficacy of some tensorization-decomposi
 To set up your environment to run the code, follow these steps:
 
 1. **Clone the Repository:**
-<pre>
+
 ```shell
 git clone https://github.com/Dongping-Chen/EFFT-EFfective-Factor-Tuning.git
 cd EFFT-EFfective-Factor-Tuning
 ```
-</pre>
-
 
 2. **Create and Activate a Virtual Environment (optional but recommended) and Install the Required Packages:**
-<pre>
+
 ```shell
 conda activate EFFT
 pip install -r requirements.txt
 ```
-</pre>
 
+3. **Download Datasets**
+To download the datasets, please refer to [https://github.com/ZhangYuanhan-AI/NOAH/#data-preparation](https://github.com/ZhangYuanhan-AI/NOAH/#data-preparation). Then move the dataset folders to `<YOUR PATH>/EFFT-EFfective-Factor-Tuning/data/`.
+
+4. **Download Checkpoints of ViT and Swin Transformers**
+As for ViT-B, download the pretrained [ViT-B/16](https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz) to `<YOUR PATH>/EFFT-EFfective-Factor-Tuning/ViT-B_16.npz`.
+For other sizes of ViT and Swin Transformers, please kindly refer to [ViT](https://github.com/google-research/vision_transformer) and [Swin Transformers](https://github.com/microsoft/Swin-Transformer).
 ## Usage
 
 To execute the experiments, run:
 
-<pre>
 ```shell
 python execute.py
 ```
-</pre>
 
 
 ### Parameters
@@ -53,11 +56,9 @@ You can customize the execution by specifying various parameters:
 
 Example:
 
-<pre>
 ```shell
 python execute.py --model "ViT" --size "B" --dataset "cifar"
 ```
-</pre>
 
 
 Note: When using the 'ViT B' model, optimal hyperparameters for replication will be automatically imported.
@@ -79,7 +80,6 @@ This project is based on the findings and methodologies presented in the paper [
 
 ## Citation
 
-<pre>
 ```
 @article{chen2023aggregate,
   title={Aggregate, Decompose, and Fine-Tune: A Simple Yet Effective Factor-Tuning Method for Vision Transformer},
@@ -88,4 +88,3 @@ This project is based on the findings and methodologies presented in the paper [
   year={2023}
 }
 ```
-</pre>

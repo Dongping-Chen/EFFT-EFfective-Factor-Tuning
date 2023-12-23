@@ -60,7 +60,7 @@ def set_ViT_EFFT(model,dim=16,s=1,init = 'vv', root_model=None):
         model.EFFTu2 = nn.Parameter(torch.zeros([768, dim], dtype=torch.float), requires_grad=True)
         model.EFFTv2 = nn.Parameter(torch.zeros([dim, 4*768], dtype=torch.float), requires_grad=True)
         model.EFFTc2 = nn.Parameter(torch.zeros([dim, dim, 2], dtype=torch.float), requires_grad=True)
-        if init[0] == 'v':
+        if init[1] == 'v':
             nn.init.zeros_(model.EFFTv2)
             nn.init.xavier_uniform_(model.EFFTu2)
         else:
@@ -88,7 +88,7 @@ def set_ViT_EFFT(model,dim=16,s=1,init = 'vv', root_model=None):
             bound_method = ViT_EFFT_forward_mlp.__get__(layer, layer.__class__)
             setattr(layer, 'forward', bound_method)
         elif len(list(layer.children())) != 0:
-            set_ViT_EFFT(layer, dim, s, root_model)
+            set_ViT_EFFT(layer, dim, s, init, root_model)
 
 def set_ViT_L_EFFT(model,dim=24,s=1,root_model=None):
     if root_model is None:
@@ -128,7 +128,7 @@ def set_ViT_L_EFFT(model,dim=24,s=1,root_model=None):
             bound_method = ViT_EFFT_forward_mlp.__get__(layer, layer.__class__)
             setattr(layer, 'forward', bound_method)
         elif len(list(layer.children())) != 0:
-            set_ViT_EFFT(layer, dim, s, root_model)
+            set_ViT_L_EFFT(layer, dim, s,root_model)
             
 def set_ViT_H_EFFT(model,dim=32,s=1,root_model=None):
     if root_model is None:
