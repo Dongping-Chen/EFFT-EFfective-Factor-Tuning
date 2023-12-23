@@ -1,0 +1,97 @@
+{
+    "cifar":{
+        "rank": 8,
+        "scale": 100,
+        "init": "v"
+    },
+    "caltech101":{
+        "rank": 32,
+        "scale": 1,
+        "init": "u"
+    },
+    "dtd":{
+        "rank": 8,
+        "scale": 10,
+        "init": "v"
+    },
+    "oxford_flowers102":{
+        "rank": 32,
+        "scale": 1,
+        "init": "v"
+    },
+    "oxford_iiit_pet":{
+        "rank": 8,
+        "scale": 100,
+        "init": "v"
+    },
+    "svhn":{
+        "rank": 32,
+        "scale": 50,
+        "init": "u"
+    },
+    "sun397":{
+        "rank": 16,
+        "scale": 50,
+        "init": "u"
+    },
+    "patch_camelyon":{
+        "rank": 32,
+        "scale": 10,
+        "init": "u"
+    },
+    "eurosat":{
+        "rank": 16,
+        "scale": 10,
+        "init": "v"
+    },
+    "resisc45":{
+        "rank": 32,
+        "scale": 10,
+        "init": "v"
+    },
+    "diabetic_retinopathy":{
+        "rank": 16,
+        "scale": 1,
+        "init": "u"
+    },
+    "clevr_dist":{
+        "rank": 32,
+        "scale": 0.1,
+        "init": "v"
+    },
+    "clevr_count":{
+        "rank": 32,
+        "scale": 5,
+        "init": "u"
+    },
+    "dmlab":{
+        "rank": 16,
+        "scale": 100,
+        "init": "v"
+    },
+    "kitti":{
+        "rank": 8,
+        "scale": 100,
+        "init": "v"
+    },
+    "dsprites_loc":{
+        "rank": 32,
+        "scale": 50,
+        "init": "u"
+    },
+    "dsprites_ori":{
+        "rank": 16,
+        "scale": 100,
+        "init": "u"
+    },
+    "smallnorb_azi":{
+        "rank": 32,
+        "scale": 30,
+        "init": "v"
+    },
+    "smallnorb_ele":{
+        "rank": 32,
+        "scale": 3,
+        "init": "u"
+    }
+}
