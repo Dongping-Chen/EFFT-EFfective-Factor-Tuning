@@ -1,10 +1,26 @@
-<div align="center"><p style="font-size:24px;">EFFT-Effective-Factor-Tuning</p></div>
-<div align="center">[Dongping Chen](https://dongping-chen.github.io/)</div>
-This repository is a reproduction of the research presented in the paper ["Effective Factor Tuning"](https://arxiv.org/pdf/2311.06749). The goal is to replicate the study's findings and provide a transparent, open-source implementation for the community to explore and build upon.
+<div align="center">
+<h1>EFFT-Effective-Factor-Tuning</h1>
 
-## Description
+<div>
+    <a href='https://dongping-chen.github.io/' target='_blank'>Dongping Chen</a>&emsp;
+    <a href='http://wanyao.me/' target='_blank'>Yao Wan</a>&emsp;
+</div>
+<div>
+    Huazhong University of Science and Technology
+</div>
 
-Recent advancements have illuminated theefficacy of some tensorization-decomposition Parameter-Efficient Fine-Tuning methods like LoRA and F acT in the context of Vision Transformers (ViT). However, these methods grapple with the challenges of inadequately addressing inner- and cross-layer redundancy. To tackle this issue, we introduce **EF**fective **F**actor-**T**uning (**EFFT**), a simple yet effective fine-tuning method. Within the VTAB-1K dataset, our **EFFT** surpasses all baselines, attaining state-of-the-art performance with a categorical average of **75.9%** in top-1 accuracy with only **0.28%** of the parameters for full fine-tuning. Considering the simplicity and efficacy of **EFFT**, it holds the potential to serve as a foundational benchmark.
+<img src="figures/Comparison.png">
+<img src="figures/Combined.png">
+<p align="center">
+<a href="https://arxiv.org/pdf/2311.06749" target='_blank'>[arXiv]</a>
+</p>
+This repository is a official code of the research presented in the paper ["Effective Factor Tuning"](https://arxiv.org/pdf/2311.06749). The goal is to provide a transparent, open-source implementation for the community to explore and build upon.
+</div>
+
+
+## Abstract
+
+Recent advancements have illuminated theefficacy of some tensorization-decomposition Parameter-Efficient Fine-Tuning methods like LoRA and FacT in the context of Vision Transformers (ViT). However, these methods grapple with the challenges of inadequately addressing inner- and cross-layer redundancy. To tackle this issue, we introduce **EF**fective **F**actor-**T**uning (**EFFT**), a simple yet effective fine-tuning method. Within the VTAB-1K dataset, our **EFFT** surpasses all baselines, attaining state-of-the-art performance with a categorical average of **75.9%** in top-1 accuracy with only **0.28%** of the parameters for full fine-tuning. Considering the simplicity and efficacy of **EFFT**, it holds the potential to serve as a foundational benchmark.
 
 ## Prerequisites
 
