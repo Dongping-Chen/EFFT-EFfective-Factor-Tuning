@@ -1,5 +1,5 @@
-# EFFT-Effective-Factor-Tuning
-
+<div align="center"><p style="font-size:24px;">EFFT-Effective-Factor-Tuning</p></div>
+<div align="center">[Dongping Chen](https://dongping-chen.github.io/)</div>
 This repository is a reproduction of the research presented in the paper ["Effective Factor Tuning"](https://arxiv.org/pdf/2311.06749). The goal is to replicate the study's findings and provide a transparent, open-source implementation for the community to explore and build upon.
 
 ## Description
@@ -27,6 +27,7 @@ cd EFFT-EFfective-Factor-Tuning
 2. **Create and Activate a Virtual Environment (optional but recommended) and Install the Required Packages:**
 
 ```shell
+conda create --name EFFT python=3.9
 conda activate EFFT
 pip install -r requirements.txt
 ```
@@ -37,6 +38,7 @@ To download the datasets, please refer to [https://github.com/ZhangYuanhan-AI/NO
 4. **Download Checkpoints of ViT and Swin Transformers**
 As for ViT-B, download the pretrained [ViT-B/16](https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz) to `<YOUR PATH>/EFFT-EFfective-Factor-Tuning/ViT-B_16.npz`.
 For other sizes of ViT and Swin Transformers, please kindly refer to [ViT](https://github.com/google-research/vision_transformer) and [Swin Transformers](https://github.com/microsoft/Swin-Transformer).
+
 ## Usage
 
 To execute the experiments, run:
@@ -76,7 +78,7 @@ Contributions to this project are welcome. Please consider the following ways to
 
 ## Acknowledgements
 
-This project is based on the findings and methodologies presented in the paper ["Effective Factor Tuning"](https://arxiv.org/pdf/2311.06749). We would like to express our sincere appreciation to Tong Yao from Peking University (PKU) and Professor Yao Wan from Huazhong University of Science and Technology (HUST) for their invaluable contributions and guidance in this research.
+This project is based on the findings and methodologies presented in the paper ["Effective Factor Tuning"](https://arxiv.org/pdf/2311.06749). We would like to express our sincere appreciation to Tong Yao from Peking University (PKU) and Professor [Yao Wan](http://wanyao.me/) from Huazhong University of Science and Technology (HUST) for their invaluable contributions and guidance in this research. Part of the code is borrowed from [FacT](https://github.com/JieShibo/PETL-ViT/tree/main/FacT) and [timm](https://pypi.org/project/timm/).
 
 ## Citation
 
