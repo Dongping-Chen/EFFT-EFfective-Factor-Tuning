@@ -56,12 +56,15 @@ For other sizes of ViT and Swin Transformers, please kindly refer to [ViT](https
 
 ## Usage
 
-To execute the experiments, run:
+To reproduce the experiments, run:
 
 ```shell
-python execute.py
+./run.sh
 ```
-
+You can also run experiment one by one:
+```shell
+python execute.py --model "ViT" --size "B" --dataset "cifar"
+```
 
 ### Parameters
 
@@ -87,9 +90,6 @@ Contributions to this project are welcome. Please consider the following ways to
 - Reporting issues
 - Improving documentation
 - Proposing new features or improvements
-
-## License
-
 
 ## Acknowledgements
 
